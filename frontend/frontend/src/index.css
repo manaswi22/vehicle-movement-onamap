@@ -1,0 +1,109 @@
+:root {
+  /* Font and global styles */
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Dynamic color scheme based on user preference */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #1c1c28;
+
+  /* Font rendering optimizations */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Primary color palette */
+  --primary-color: #4F46E5; /* Vibrant purple */
+  --primary-hover-color: #6366F1;
+  --secondary-color: #14B8A6; /* Teal accent color */
+  --background-color-dark: #1c1c28;
+  --background-color-light: #ffffff;
+}
+
+a {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-hover-color); /* Brighter hover effect */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color-dark);
+  color: rgba(255, 255, 255, 0.95);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+/* Button styles */
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover-color);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px solid var(--secondary-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #2d3e50;
+    background-color: var(--background-color-light);
+  }
+  a {
+    color: #3b82f6;
+  }
+  a:hover {
+    color: #2563eb;
+  }
+  button {
+    background-color: #3b82f6;
+  }
+  button:hover {
+    background-color: #2563eb;
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0px 0px 5px rgba(255, 200, 255, 0.6), 0px 0px 10px rgba(255, 180, 255, 0.6);
+  }
+  100% {
+    text-shadow: 0px 0px 15px rgba(255, 100, 255, 0.8), 0px 0px 20px rgba(255, 70, 255, 0.8);
+  }
+}

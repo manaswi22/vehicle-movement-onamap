@@ -1,0 +1,8 @@
+
+[
+  { "latitude": 17.9784, "longitude": 79.5941, "timestamp": "2024-07-20T09:00:00Z", "label": "Warangal - Starting Point" },
+  { "latitude": 17.9125, "longitude": 79.5922, "timestamp": "2024-07-20T09:15:00Z", "label": "Waypoint 1 - Kazipet" },
+  { "latitude": 17.6302, "longitude": 78.8241, "timestamp": "2024-07-20T10:00:00Z", "label": "Waypoint 2 - Bhongir" },
+  { "latitude": 17.4239, "longitude": 78.5692, "timestamp": "2024-07-20T10:45:00Z", "label": "Waypoint 3 - Uppal" },
+  { "latitude": 17.3850, "longitude": 78.4867, "timestamp": "2024-07-20T11:00:00Z", "label": "Hyderabad - Destination" }
+]
